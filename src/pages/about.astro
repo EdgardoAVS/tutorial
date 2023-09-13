@@ -1,5 +1,6 @@
 ---
-import '../styles/global.css';
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
 
 const pageTitle = "Sobre mi";
 
@@ -24,7 +25,7 @@ const finished = false;
 const goal = 3;
 
 const skillColor = "navy";
-const fontWeight = "bold"
+const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
@@ -35,7 +36,7 @@ const textCase = "uppercase";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>About</title>
-    <style define:vars={{skillColor, fontWeight, textCase}}>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
       h1 {
         color: #1e254f;
         font-size: 4rem;
@@ -48,6 +49,7 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
+    <Navigation />
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
